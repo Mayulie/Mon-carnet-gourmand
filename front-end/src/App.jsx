@@ -1,20 +1,6 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
-
- function Login () {
-    return (
-       <form>
-        <label htmlFor='username'>Nom utilisateur</label>
-        <input id="username"></input>
-        <br/>
-        <label htmlFor='motdepasse'>Mot de passe</label>
-        <input id="motdepasse"></input>
-      </form>
-    )
-  }
+import Connexion from './composant/connexion/connexion'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,8 +8,8 @@ function App() {
  
   return (
     <main>
-      <h1>Pâtisserie Carnet 2</h1>
-      <Login/>
+      <h1>Pâtisserie Carnet 4</h1>
+      <Connexion/>
     </main>
   )
 }
