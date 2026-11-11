@@ -3,13 +3,19 @@ import './App.css'
 import Connexion from './composant/connexion/connexion'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [connecte, setConnecte] = useState(false)
 
  
   return (
     <main>
       <h1>Pâtisserie Carnet 4</h1>
-      <Connexion/>
+      {connecte?(
+        <p>Accueil</p>
+      ):(
+        <Connexion setConnecte={setConnecte}/>
+      )}
+     
     </main>
   )
 }
